@@ -14,7 +14,9 @@ spring:
     config:
       server:
         git:
+          skipSslValidation: true
           uri: https://github.com/Ivypas/cloud-native-spring-in-action-config-repo.git
+          #uri: https://gitee.com/ivypas/cloud-native-spring-in-action-config-repo.git
           default-lable: main  # equals branch in github
           timeout: 5
           clone-on-start: true
