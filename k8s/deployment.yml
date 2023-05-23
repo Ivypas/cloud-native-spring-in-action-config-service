@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: config-service
-          image: config-service
+          # gradle bootBuildImage --imageName local/ivypas/config-service:chapter7
+          image: local/ivypas/config-service:chapter7
           imagePullPolicy: IfNotPresent
           lifecycle:
             preStop:
